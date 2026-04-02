@@ -1,0 +1,43 @@
+# Research Assistant Settings
+
+# Research Configuration
+research:
+  max_iterations: 10
+  timeout_seconds: 300
+  max_concurrent_searches: 3
+
+# Report Configuration
+report:
+  default_format: markdown
+  include_executive_summary: true
+  include_key_findings: true
+  max_findings: 5
+  include_detailed_analysis: true
+  include_references: true
+
+# Search Configuration
+search:
+  engine: duckduckgo
+  max_results: 5
+  timeout_seconds: 30
+
+# LLM Configuration
+llm:
+  provider: openai
+  model: gpt-4-turbo-preview
+  temperature: 0.7
+  max_tokens: 4096
+
+# Logging Configuration
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/research_assistant.log
+  max_file_size_mb: 10
+  backup_count: 5
+
+# Cache Configuration
+cache:
+  enabled: true
+  ttl_seconds: 3600
+  max_size_mb: 100

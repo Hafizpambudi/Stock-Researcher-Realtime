@@ -1,0 +1,60 @@
+{
+  "sources": [
+    {
+      "id": "source_001",
+      "title": "The Rise of Artificial Intelligence in Modern Healthcare",
+      "url": "https://example.com/ai-healthcare-article",
+      "type": "article",
+      "author": "Dr. Jane Smith",
+      "date": "2024-01-15",
+      "publisher": "Medical Technology Journal",
+      "topics": ["artificial intelligence", "healthcare", "diagnostics", "personalized medicine"]
+    },
+    {
+      "id": "source_002",
+      "title": "Machine Learning Applications in Diagnostic Imaging",
+      "url": "https://example.com/ml-imaging-study",
+      "type": "research_paper",
+      "author": "Dr. John Doe et al.",
+      "date": "2023-11-20",
+      "publisher": "Nature Medicine",
+      "doi": "10.1038/example.2023.001",
+      "topics": ["machine learning", "diagnostic imaging", "radiology"]
+    },
+    {
+      "id": "source_003",
+      "title": "AI-Driven Drug Discovery: A Comprehensive Review",
+      "url": "https://example.com/ai-drug-discovery",
+      "type": "review",
+      "author": "Pharmaceutical Research Institute",
+      "date": "2024-02-01",
+      "publisher": "Drug Discovery Today",
+      "topics": ["drug discovery", "pharmaceutical", "AI applications"]
+    },
+    {
+      "id": "source_004",
+      "title": "Ethical Considerations in Healthcare AI",
+      "url": "https://example.com/ai-ethics-healthcare",
+      "type": "article",
+      "author": "Ethics Board Committee",
+      "date": "2023-12-10",
+      "publisher": "Journal of Medical Ethics",
+      "topics": ["ethics", "AI", "healthcare policy", "bias"]
+    },
+    {
+      "id": "source_005",
+      "title": "Personalized Medicine Through AI: Current State and Future Directions",
+      "url": "https://example.com/personalized-medicine-ai",
+      "type": "whitepaper",
+      "author": "Global Health Innovation Lab",
+      "date": "2024-01-30",
+      "publisher": "WHO Collaborating Centre",
+      "topics": ["personalized medicine", "genomics", "treatment optimization"]
+    }
+  ],
+  "metadata": {
+    "created_at": "2024-03-30",
+    "version": "1.0",
+    "description": "Sample sources for testing the Research Assistant citation system"
+  }
+}
