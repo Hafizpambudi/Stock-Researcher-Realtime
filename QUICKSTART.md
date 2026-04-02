@@ -35,8 +35,14 @@ source .venv/bin/activate  # Unix/macOS
 ### Daily Development
 
 ```bash
-# Run the research assistant
+# Run the research assistant (recommended: use entry point)
+uv run research-assistant research "Your topic"
+
+# Alternative: run as module
 uv run python -m src.main research "Your topic"
+
+# Start interactive session
+uv run research-assistant interactive
 
 # Run tests
 uv run pytest tests/ -v
