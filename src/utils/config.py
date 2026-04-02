@@ -290,7 +290,7 @@ def get_llm(
         # Configure for OpenRouter API
         api_key = kwargs.pop("api_key", None) or settings.openrouter_api_key or os.environ.get("OPENROUTER_API_KEY", "")
         base_url = kwargs.pop("base_url", None) or settings.openrouter_base_url
-        model_name = model or settings.openrouter_model
+        model_name = os.environ.get("OPENROUTER_MODEL", "")
 
         # OpenRouter requires a special header for ranking
         extra_headers = kwargs.pop("extra_headers", {})

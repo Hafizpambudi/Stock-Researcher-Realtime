@@ -7,8 +7,8 @@ a series of steps in order, passing the output of each step to the next.
 
 from typing import Any, Optional, Sequence
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.base import Chain
+from langchain_core.callbacks.manager import Callbacks
+from langchain_classic.chains.base import Chain
 from langchain_core.language_models.base import BaseLanguageModel
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import Runnable, RunnablePassthrough

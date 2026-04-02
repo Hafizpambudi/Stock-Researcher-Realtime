@@ -16,12 +16,12 @@ from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
-from langchain.callbacks.manager import (
+from langchain_core.callbacks.manager import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
 from langchain.tools import BaseTool
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, PrivateAttr
 from readability import Document as ReadabilityDocument
 
 from src.utils.config import get_settings
@@ -181,10 +181,10 @@ class BrowserTool(BaseTool):
     )
     args_schema: Type[BaseModel] = Field(default_factory=lambda: BrowserInput)
 
-    _settings: Any = Field(default_factory=get_settings)
-    _session: requests.Session = Field(default_factory=requests.Session)
-    _cache: LRUCache = Field(default_factory=lambda: LRUCache(max_size=100))
-    _rate_limiter: RateLimiter = Field(
+    _settings: Any = PrivateAttr(default_factory=get_settings)
+    _session: requests.Session = PrivateAttr(default_factory=requests.Session)
+    _cache: LRUCache = PrivateAttr(default_factory=lambda: LRUCache(max_size=100))
+    _rate_limiter: Any = PrivateAttr(
         default_factory=lambda: RateLimiter(requests_per_second=2)
     )
 

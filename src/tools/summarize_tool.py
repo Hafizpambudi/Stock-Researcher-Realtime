@@ -7,7 +7,7 @@ LLM-based summarization techniques.
 
 from typing import Any, Optional, Type
 
-from langchain.callbacks.manager import (
+from langchain_core.callbacks.manager import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )

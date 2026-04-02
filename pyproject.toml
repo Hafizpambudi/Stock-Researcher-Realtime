@@ -94,10 +94,9 @@ Repository = "https://github.com/username/research-assistant.git"
 [project.scripts]
 research-assistant = "src.main:main"
 
-# uv-specific configuration
-[tool.uv]
-# Default to dev dependencies for development work
-dev-dependencies = [
+# Dependency groups (PEP 735)
+[dependency-groups]
+dev = [
     "pytest>=7.4.0",
     "pytest-cov>=4.1.0",
     "pytest-asyncio>=0.21.0",

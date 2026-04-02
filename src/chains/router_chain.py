@@ -7,8 +7,9 @@ to different downstream chains based on the input content or intent.
 
 from typing import Any, Optional
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.base import Chain
+
+from langchain_core.callbacks.manager import Callbacks
+from langchain_classic.chains.base import Chain
 from langchain_core.language_models.base import BaseLanguageModel
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import Runnable, RunnableLambda
